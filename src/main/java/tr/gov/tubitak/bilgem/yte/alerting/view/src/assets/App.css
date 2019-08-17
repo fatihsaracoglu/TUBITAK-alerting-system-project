@@ -1,0 +1,355 @@
+body {
+  background-color: #161b21 !important;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: normal;
+}
+
+/***********************
+**** Header section ****
+***********************/
+
+.Header .navbar {
+  color: black !important;
+  background-color: #F4BD24 !important;
+  margin-bottom: 40px;
+}
+
+.Header p {
+  padding-top: 0.2%;
+}
+
+.Header .navbar a {
+  color: #161b21 !important;
+}
+
+.Header .navbar a {
+  color: #161b21 !important;
+  margin-left: 7%;
+}
+
+.Header .navbar a img {
+  margin-right: 5%;
+}
+
+/*********************
+**** Form section ****
+*********************/
+
+.Form {
+  width: 60%;
+  margin-top: 8%;
+}
+
+.Form input:focus {
+  outline: none !important;
+  border: 1px solid #F4BD24;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+.Form .container {
+  margin-left: 33%;
+}
+
+.Form .container .row {
+  margin-left: 10px;
+}
+
+.Form .container form {
+  color: #F4BD24;
+}
+
+.Form .container button {
+  background-color: #161b21;
+  color: #F4BD24;
+  border-radius: 15px;
+  border-color: #F4BD24;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.Form .container button:hover {
+  background-color: #F4BD24;
+  color: #161b21;
+}
+
+.Form .container .alert-list-btn {
+  margin-left: 6%;
+}
+
+.Form .container .btn-toolbar {
+  justify-content: center;
+  padding-top: 2%;
+}
+
+#errors {
+  color: #ff3d33;
+  vertical-align: middle;
+}
+
+#nameError {
+  margin-top: 2.7%;
+  position: fixed;
+}
+
+#urlError {
+  margin-top: 8.5%;
+  position: fixed;
+
+}
+
+#periodError {
+  margin-top: 20.6%;
+  position: fixed;
+
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #161b21;
+  color: #F4BD24;
+  font-size: 13px;
+  border-radius: 15px;
+}
+
+
+.popup_inner {
+  position: absolute;
+  border-color: #F4BD24 !important;
+  left: 10%;
+  right: 25%;
+  margin: auto;
+  font-size: 10px;
+  border-style: solid;
+  margin-top: 20%;
+  margin-left: 30%;
+  margin-right: 20%;
+  margin-bottom: 20%;
+  width: 20%;
+  border-radius: 20px;
+  border-width: thin;
+}
+
+.popup h1 {
+  font-size: 17px !important;
+  text-align: center;
+  margin-top: 17%;
+}
+
+.popup Button {
+  margin: 3% 10% 10% 41%;
+}
+
+.blurfilter {
+  filter: blur(8px);
+}
+
+/**************************
+**** AlertList section ****
+**************************/
+
+.AlertList {
+  color: #F4BD24;
+}
+
+.AlertList table {
+  color: #F4BD24;
+  width: 30%;
+  margin-bottom: 8%;
+  margin-left: 33%;
+  margin-top: 8%;
+}
+
+.AlertList .back-btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 20px 5px 20px;
+  margin-left: 15%;
+  font-size: 25px;
+  position: sticky;
+  top: 10%;
+  float: left;
+  transition: transform .2s;
+}
+
+.AlertList .back-btn:hover {
+  transform: scale(1.2);
+  background-color: #F4BD24;
+  color: black;
+  size: 30px;
+}
+
+.AlertList .previous {
+  background-color: #F4BD24;
+  border-color: #F4BD24;
+  color: black;
+  position: sticky;
+  top: 15%;
+}
+
+.AlertList .round {
+  border-radius: 50%;
+}
+
+.AlertList table thead .text {
+  text-align: center;
+  justify-content: center;
+}
+
+.AlertList table tbody tr:hover {
+  color: #F4BD24 !important;
+}
+
+.AlertList table tbody tr a {
+  color: #F4BD24;
+}
+
+/*.AlertList table tbody tr a:hover {*/
+/*  color: white;*/
+/*}*/
+
+.AlertList {
+  color: #F4BD24;
+}
+
+
+.AlertList #delete-btn {
+  color: whitesmoke;
+  text-shadow: unset !important;
+  opacity: unset !important;
+  font-size: 30px;
+  border-color: #161b21 !important;
+}
+
+.AlertList #delete-btn:hover {
+  color: red !important;
+  background-color: unset;
+}
+
+/**********************
+**** Graph section ****
+**********************/
+
+/*.AlertDetail canvas {*/
+/*  padding: 7% 9% 9% 9%;*/
+/*}*/
+
+.AlertDetail .Chart {
+  width: 80%;
+  padding-left: 20%;
+  padding-top: 10%;
+}
+
+.AlertDetail .back-btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 20px 5px 20px;
+  margin-left: 10%;
+  margin-top: 10%;
+  font-size: 25px;
+  position: sticky;
+  top: 10%;
+  float: left;
+  transition: transform .2s;
+}
+
+.AlertDetail .back-btn:hover {
+  transform: scale(1.2);
+  background-color: #F4BD24;
+  color: black;
+  size: 30px;
+}
+
+.AlertDetail .previous {
+  background-color: #F4BD24;
+  border-color: #F4BD24;
+  color: black;
+  position: sticky;
+  top: 12%;
+}
+
+.AlertDetail .round {
+  border-radius: 50%;
+}
+
+/***********************
+**** Footer section ****
+***********************/
+
+.fixed-bottom {
+  background-color: #F4BD24;
+}
+
+.fixed-bottom h5 {
+  padding-left: 10px;
+  border-left: 3px solid #eeeeee;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.fixed-bottom nav .container {
+  font-size: 15px;
+  justify-content: center;
+}
+
+.fixed-bottom nav .container span {
+  font-size: 16px;
+}
+
+/***********************
+**** Page Not Found ****
+***********************/
+
+.pageNotFound .text {
+  color: #F4BD24;
+  text-align: center;
+  position: fixed;
+  padding-top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pageNotFound img {
+  width: 27%;
+  height: 23%;
+  margin-top: 10%;
+  margin-left: 36%;
+}
+
+.pageNotFound .text h1 {
+  font-size: 190px;
+  font-weight: lighter;
+  font-family: 'Raleway', sans-serif;
+}
+
+.pageNotFound .text p {
+  font-size: 20px;
+}
+
+.pageNotFound .text button {
+  color: #161b21;
+  text-decoration: none;
+  border-radius: 50px;
+  background-color: #161b21;
+  border-color: #F4BD24;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.pageNotFound .text a button {
+  color: #F4BD24;
+  text-decoration: none;
+}
+
+.pageNotFound .text button:hover {
+  background-color: #F4BD24;
+}
+
+.pageNotFound .text a button:hover {
+  color: #161b21;
+}
