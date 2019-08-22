@@ -208,6 +208,10 @@ body {
   color: #F4BD24;
 }
 
+.AlertList table tbody tr .row-element {
+  padding-top: 2.5%;
+}
+
 /*.AlertList table tbody tr a:hover {*/
 /*  color: white;*/
 /*}*/

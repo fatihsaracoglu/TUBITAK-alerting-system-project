@@ -43,12 +43,14 @@ class AlertList extends Component {
         const contents = this.state.alertList.map((item, key) => {
             return (
                 <tr key={key}>
-                    <th scope="row">{item.name}</th>
-                    <th><Link to={{pathname: "/alerts/" + item.id}}>
+                    <th>
+                        <Link to={{pathname: "/alerts/" + item.id}}><button type="button" className="btn btn-sm btn-outline-warning">Detail</button></Link></th>
+                    <th className="row-element" scope="row">{item.name}</th>
+                    <th className="row-element">
                         {item.url}
-                    </Link>
                     </th>
-                    <th>{item.period}</th>
+                    <th className="row-element">{item.method}</th>
+                    <th className="row-element">{item.period}</th>
                     <th><Button onClick={() => this.handleDelete(item.id)} id="delete-btn" className="close" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </Button></th>
@@ -63,8 +65,10 @@ class AlertList extends Component {
                 <table className="table table-hover">
                     <thead>
                     <tr>
+                        <th></th>
                         <th scope="col">Name</th>
                         <th scope="col">Address</th>
+                        <th scope="col">Method</th>
                         <th scope="col" className="period">Period</th>
                         <th></th>
                     </tr>
