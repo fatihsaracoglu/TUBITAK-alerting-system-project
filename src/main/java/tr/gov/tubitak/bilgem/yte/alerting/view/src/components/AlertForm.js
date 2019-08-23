@@ -32,6 +32,8 @@ class AlertForm extends Component {
         let nameError = "";
         let urlError = "";
         let periodError = "";
+        var regex;
+        var result;
 
         if(!this.state.name) {
             nameError = "Name cannot be blank!";
@@ -39,10 +41,20 @@ class AlertForm extends Component {
 
         if(!this.state.url) {
             urlError = "URL cannot be blank!";
+        } else {
+            regex = /^((https?):\/\/)?(www.|[a-zA-Z]+\.)?[a-zA-Z0-9]+\.[a-zA-Z]+\.[a-zA-Z]+(\/[a-zA-Z0-9-_#]+\/?)*$/;
+            result = regex.test(this.state.url);
+            if (result === false)
+                urlError = "Enter a valid URL!"
         }
 
         if(!this.state.period) {
             periodError = "Period cannot be blank!";
+        } else {
+            regex = /^\d+$/;
+            result = regex.test(this.state.period);
+            if (result === false)
+                periodError = "Enter an integer!"
         }
 
         if (nameError || urlError || periodError) {
@@ -52,7 +64,6 @@ class AlertForm extends Component {
 
         return true;
     };
-
 
     handleSubmit = event => {
         //event.preventDefault();
@@ -75,7 +86,6 @@ class AlertForm extends Component {
             this.setState({
                 showPopup: !this.state.showPopup,
             });
-
         }
     };
 
