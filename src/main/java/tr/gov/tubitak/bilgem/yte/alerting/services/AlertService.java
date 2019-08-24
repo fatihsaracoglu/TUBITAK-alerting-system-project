@@ -28,4 +28,17 @@ public class AlertService {
     public void deleteAlert(final Long id) {
         alertRepository.deleteById(id);
     }
+
+    public Alert updateAlert(final Alert alert, final Long id) {
+        Alert alertFromDB = alertRepository.findById(id).get();
+
+        if (alertFromDB != null) {
+            Long alertId = alertFromDB.getId();
+            alert.setId(alertId);
+            return alertRepository.save(alert);
+        }
+
+        return null;
+    }
+
 }

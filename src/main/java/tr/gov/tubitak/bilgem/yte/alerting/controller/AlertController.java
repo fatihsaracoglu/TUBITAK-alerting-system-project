@@ -34,4 +34,8 @@ public class AlertController {
         alertService.deleteAlert(id);
     }
 
+    @PutMapping("/alerts/{id}")
+    public Alert updateAlert(@RequestBody final Alert alert, @PathVariable Long id) {
+        return alertService.updateAlert(alert, id);
+    }
 }
