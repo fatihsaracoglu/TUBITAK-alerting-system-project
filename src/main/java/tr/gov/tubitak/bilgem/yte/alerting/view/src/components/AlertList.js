@@ -10,8 +10,6 @@ class AlertList extends Component {
         this.state = {
             alertList: [],
         };
-
-        this.goBack = this.goBack.bind(this);
     }
 
     fetchAlerts = () => {
@@ -30,21 +28,20 @@ class AlertList extends Component {
         this.fetchAlerts();
     };
 
-
     componentDidMount() {
         this.fetchAlerts();
     };
-
-    goBack() {
-        this.props.history.goBack();
-    }
 
     render() {
         const contents = this.state.alertList.map((item, key) => {
             return (
                 <tr key={key}>
                     <th>
-                        <Link to={{pathname: "/alerts/" + item.id}}><button type="button" className="btn btn-sm btn-outline-warning">Detail</button></Link></th>
+                        <Link to={{pathname: "/alerts/update/" + item.id}}><button type="button" className="btn btn-sm btn-outline-warning">Update</button></Link>
+                    </th>
+                    <th>
+                        <Link to={{pathname: "/alerts/" + item.id}}><button type="button" className="btn btn-sm btn-outline-warning">Detail</button></Link>
+                    </th>
                     <th className="row-element" scope="row">{item.name}</th>
                     <th className="row-element">
                         {item.url}
@@ -61,10 +58,10 @@ class AlertList extends Component {
         return (
             <div className="AlertList">
                 <Link to="/"><Button variant="warning" className="back-btn previous round">&#8249;</Button></Link>
-                {/* <div className="text">ALERT LIST</div> */}
                 <table className="table table-hover">
                     <thead>
                     <tr>
+                        <th></th>
                         <th></th>
                         <th scope="col">Name</th>
                         <th scope="col">Address</th>
