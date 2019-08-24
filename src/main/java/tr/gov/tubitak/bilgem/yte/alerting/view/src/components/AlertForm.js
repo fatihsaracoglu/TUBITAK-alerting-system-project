@@ -147,7 +147,6 @@ class AlertForm extends Component {
                                 <Form.Group>
                                     <Form.Label>Period</Form.Label>
                                     <Form.Control
-                                        value={this.state.time}
                                         onChange={this.handleInputChange}
                                         name="period"
                                         id="period"
@@ -164,7 +163,7 @@ class AlertForm extends Component {
                                 </Button>
                                 {this.state.showPopup ?
                                     <Notification
-                                        text='Alert added!'
+                                        text='Alert Added!'
                                         closePopup={this.togglePopup.bind(this)}
                                     />
                                     : null
