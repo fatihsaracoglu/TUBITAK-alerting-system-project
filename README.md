@@ -21,8 +21,8 @@ In order to run the application, you need:
 
 ## Screenshots
 
-![image](https://drive.google.com/uc?export=view&id=1-9p5AbwI7cfSgc9nk3u9FoT5gpuSbqt_)
+![image](https://drive.google.com/uc?export=view&id=1EPuPQnf2-N1doI9ZMV5gyjSCtfv0dldU)
 
-![image](https://drive.google.com/uc?export=view&id=1Lq-RZcjXGbyAHP-0d0udGvD9KHzK2AZb)
+![image](https://drive.google.com/uc?export=view&id=18Ft-OMHf3FoLqGK1bHntilcdmkBHhOpO)
 
-![image](https://drive.google.com/uc?export=view&id=1ZlorjFyavW6U81kBSDbkODuJs1xembXR)
+![image](https://drive.google.com/uc?export=view&id=1CR1Ibp3aLqufUKSG14ZIFLaylicK8iEN)
