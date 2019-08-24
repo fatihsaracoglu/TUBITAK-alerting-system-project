@@ -38,6 +38,7 @@ body {
 .Form {
   width: 60%;
   margin-top: 8%;
+  font-weight: bolder;
 }
 
 .Form input:focus {
@@ -116,7 +117,6 @@ body {
   border-radius: 15px;
 }
 
-
 .popup_inner {
   position: absolute;
   border-color: #F4BD24 !important;
@@ -144,10 +144,6 @@ body {
   margin: 3% 10% 10% 41%;
 }
 
-.blurfilter {
-  filter: blur(8px);
-}
-
 /**************************
 **** AlertList section ****
 **************************/
@@ -158,9 +154,9 @@ body {
 
 .AlertList table {
   color: #F4BD24;
-  width: 30%;
+  width: 45%;
   margin-bottom: 8%;
-  margin-left: 33%;
+  margin-left: 27%;
   margin-top: 8%;
 }
 
@@ -212,14 +208,9 @@ body {
   padding-top: 2.5%;
 }
 
-/*.AlertList table tbody tr a:hover {*/
-/*  color: white;*/
-/*}*/
-
 .AlertList {
   color: #F4BD24;
 }
-
 
 .AlertList #delete-btn {
   color: whitesmoke;
@@ -237,10 +228,6 @@ body {
 /**********************
 **** Graph section ****
 **********************/
-
-/*.AlertDetail canvas {*/
-/*  padding: 7% 9% 9% 9%;*/
-/*}*/
 
 .AlertDetail .Chart {
   width: 80%;
