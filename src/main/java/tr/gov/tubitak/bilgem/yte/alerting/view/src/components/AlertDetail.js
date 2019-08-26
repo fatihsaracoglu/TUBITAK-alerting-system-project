@@ -58,6 +58,7 @@ class AlertDetail extends Component {
                     period: res.data.period,
                     status: res.data.alertDetailSet[res.data.alertDetailSet.length - 1]
                 });
+                this.updateChart();
                 const interval = res.data.period * 1000;
                 setInterval(this.updateAlert, interval);
                 setInterval(this.updateChart, interval)
@@ -74,7 +75,9 @@ class AlertDetail extends Component {
     };
 
     updateChart() {
-        yVal = this.state.status.status;
+        var value = this.state.status.status;
+        if (value !== null)
+            yVal = value;
         dps.push({x: xVal, y: yVal});
         if (yVal === 1) {
             options.title.text = "Status of " + this.state.url + ": Connection OK!";
