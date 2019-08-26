@@ -24,7 +24,7 @@ public class CheckingService {
 
         try {
             HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
-            connection.setRequestMethod("GET");
+            connection.setRequestMethod(alert.getMethod());
             connection.connect();
             int responseCode = connection.getResponseCode();
             if (responseCode == 200) {
