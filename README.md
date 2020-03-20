@@ -16,13 +16,13 @@ In order to run the application, you need:
 * PostgreSQL
 
 
-<u>**NOTE:**</u> Before running application, you should install dependencies. Just write `yarn install` to the command line when you are in the **view** directory.
+<u>**NOTE:**</u> Before running application, you should install dependencies. Just write `npm install` to the command line when you are in the **view** directory.
 
 
 ## Screenshots
 
-![image](https://drive.google.com/uc?export=view&id=1EPuPQnf2-N1doI9ZMV5gyjSCtfv0dldU)
+![image](https://i.imgur.com/KqU284c.png)
 
-![image](https://drive.google.com/uc?export=view&id=18Ft-OMHf3FoLqGK1bHntilcdmkBHhOpO)
+![image](https://i.imgur.com/w0suSiV.png)
 
-![image](https://drive.google.com/uc?export=view&id=1CR1Ibp3aLqufUKSG14ZIFLaylicK8iEN)
+![image](https://i.imgur.com/JapkYKX.png)
